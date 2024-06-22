@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Button } from "@/components/ui/button";
 
 function page() {
   return (
-    <div>Hola mundo</div>
-  )
+    <div>
+      <h1>Hola mundo</h1>
+      <Button>oli</Button>
+    </div>
+  );
 }
 
-export default page
+export default page;
