@@ -1,6 +1,6 @@
 import React from "react";
 import ActionButtons from "@/components/navbar/action-buttons";
-import NavigationBar from "@/components/navbar/navigation-bar";
+import { NavigationBar } from "@/components/navbar/navigation-bar";
 import Logo from "@/components/navbar/logo";
 
 function Navbarshadcn() {

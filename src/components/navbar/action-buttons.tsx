@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
+  SheetClose,
   SheetContent,
   SheetDescription,
   SheetHeader,
@@ -22,16 +23,27 @@ function ActionButtons() {
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
-              <SheetTitle>Are you absolutely sure?</SheetTitle>
+              <SheetTitle>Jareth Web</SheetTitle>
               <SheetDescription>
-                description
                 <div className="flex flex-col space-y-4 items-start w-full text-lg mt-10">
-                  <Link href="/">Ingresar</Link>
-                  <Link href="/">Registrate</Link>
-                  <Link href="/">Series</Link>
-                  <Link href="/">Blog</Link>
-                  <Link href="/">Precios</Link>
-                  <Link href="/">Acerca de</Link>
+                  <SheetClose asChild>
+                    <Link href="/signIn">Ingresar</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/getStarted">Registrate</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/series">Series</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/blog">Blog</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/prices">Precios</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
+                    <Link href="/about">Acerca de</Link>
+                  </SheetClose>
                 </div>
               </SheetDescription>
             </SheetHeader>
@@ -39,10 +51,14 @@ function ActionButtons() {
         </Sheet>
       </div>
       <div className="hidden md:flex md:space-x-4">
-        <Button className="text-md" variant="ghost">
-          Ingresar
-        </Button>
-        <Button className="text-md">Registrate</Button>
+        <Link href="/signIn">
+          <Button className="text-md" variant="ghost">
+            Ingresar
+          </Button>
+        </Link>
+        <Link href="/getStarted">
+          <Button className="text-md">Registrate</Button>
+        </Link>
       </div>
     </div>
   );
