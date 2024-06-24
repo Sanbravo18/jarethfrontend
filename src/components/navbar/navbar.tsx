@@ -5,19 +5,22 @@ import Logo from "@/components/navbar/logo";
 
 function Navbarshadcn() {
   return (
-    <div
-      className="
+    <header>
+      <nav
+        className="
     flex
     justify-between
     items-center
     px-10
     border-b
+    h-20  
     "
-    >
-      <Logo />
-      <NavigationBar />
-      <ActionButtons />
-    </div>
+      >
+        <Logo />
+        <NavigationBar />
+        <ActionButtons />
+      </nav>
+    </header>
   );
 }
 
