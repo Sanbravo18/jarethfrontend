@@ -7,3 +7,7 @@
     rgba(8, 4, 5, 1) 100%
   );
 }
+
+#mainsectionphoto {
+  background-image: url("/jarethwithoutbackground.png");
+}

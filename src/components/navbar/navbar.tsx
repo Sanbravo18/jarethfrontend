@@ -14,6 +14,7 @@ function Navbarshadcn() {
     px-10
     border-b
     h-20  
+    
     "
       >
         <Logo />

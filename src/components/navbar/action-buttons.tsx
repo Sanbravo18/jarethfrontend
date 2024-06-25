@@ -13,6 +13,7 @@ import { AlignJustify } from "lucide-react";
 
 import Link from "next/link";
 
+import { ModeToggle } from "@/components/navbar/sunmoontoggle";
 function ActionButtons() {
   return (
     <div>
@@ -44,6 +45,9 @@ function ActionButtons() {
                   <SheetClose asChild>
                     <Link href="/about">Acerca de</Link>
                   </SheetClose>
+                  <SheetClose asChild>
+                    <ModeToggle />
+                  </SheetClose>
                 </div>
               </SheetDescription>
             </SheetHeader>
@@ -59,6 +63,7 @@ function ActionButtons() {
         <Link href="/getStarted">
           <Button className="text-md">Registrate</Button>
         </Link>
+        <ModeToggle />
       </div>
     </div>
   );

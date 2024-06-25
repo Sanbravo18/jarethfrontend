@@ -1,10 +1,16 @@
 import React from "react";
 import "./mainsection.css";
+
 function Mainsection() {
   return (
     <section
-      className="md:py-20 py-10 spacey-10 
-    
+      id="mainsectionphoto"
+      className="md:py-20 py-10 spacey-10 md:grid md:grid-cols-2
+      bg-cover
+      md:bg-contain
+      bg-no-repeat
+      bg-center
+      min-h-screen
     "
     >
       <div className="container mx-auto text-center ">
@@ -14,7 +20,7 @@ function Mainsection() {
         flex
         justify-center
         font-extrabold
-        md:px-20
+        
         pb-10
         text-gradient
         bg-gradient-to-r
@@ -25,7 +31,7 @@ function Mainsection() {
         
         "
         >
-          Jareth web blabla blabla bla
+          Jareth web
         </div>
       </div>
     </section>
