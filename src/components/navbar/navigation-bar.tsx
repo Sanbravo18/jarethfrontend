@@ -73,7 +73,7 @@ export function NavigationBar() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link href="/about" legacyBehavior passHref>
-            <NavigationMenuLink>Acerca de</NavigationMenuLink>
+            <NavigationMenuLink>Mi historia</NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>
