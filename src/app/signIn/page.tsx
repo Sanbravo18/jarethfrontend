@@ -14,7 +14,7 @@ import { Label } from "@/components/ui/label";
 
 function SignIn() {
   return (
-    <Card className="mx-auto max-w-sm mt-6">
+    <Card className="mx-auto max-w-sm mt-6 mb-6">
       <CardHeader>
         <CardTitle className="text-2xl">Ingresar</CardTitle>
         <CardDescription>

@@ -6,7 +6,7 @@ export default function GetStartedLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section>
+    <section className="min-h-screen">
       <Navbarshadcn />
       {children}
     </section>
