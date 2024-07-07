@@ -9,7 +9,7 @@ function page() {
     <div>
       <Navbarshadcn />
 
-      <main className="min-h-screen flex-col " id="mainsectioncss">
+      <main className="min-h-screen flex-col ">
         <Mainsection />
       </main>
     </div>

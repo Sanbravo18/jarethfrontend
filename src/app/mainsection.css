@@ -1,13 +1,13 @@
-#mainsectioncss {
-  background: rgb(105, 110, 129);
+.mainsectioncss {
+  background: rgb(28, 41, 68);
   background: radial-gradient(
     circle,
-    rgba(105, 110, 129, 1) 0%,
-    rgba(64, 62, 75, 1) 55%,
-    rgba(8, 4, 5, 1) 100%
+    rgba(28, 41, 68, 1) 0%,
+    rgba(17, 24, 39, 1) 36%,
+    rgba(26, 35, 46, 1) 100%
   );
 }
 
-#mainsectionphoto {
+.mainsectionphoto {
   background-image: url("/jarethwithoutbackground.png");
 }
