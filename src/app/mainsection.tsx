@@ -13,6 +13,7 @@ function Mainsection() {
       min-h-screen
       mainsectioncss
       relative
+      z-1
     "
     >
       <motion.div
@@ -31,7 +32,7 @@ function Mainsection() {
             className=" h-full object-cover"
           />
         </motion.div>
-        <div className="container mx-auto text-center relative z-10">
+        <div className="container mx-auto text-center relative z-1">
           <motion.h1
             className=" 
         text-6xl 
