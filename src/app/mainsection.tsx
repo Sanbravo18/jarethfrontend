@@ -29,9 +29,7 @@ function Mainsection() {
         viewport={{ once: true, amount: 0.25 }}
       >
         <motion.div
-          variants={navVariants}
-          initial="hidden"
-          whileInView="show"
+          variants={slideIn("down", "spring", 1, 1)}
           className={`sm:px-16 px-6 relative py-8`}
         >
           <div className="absolute w-[50%] inset-0 gradient-01"></div>
