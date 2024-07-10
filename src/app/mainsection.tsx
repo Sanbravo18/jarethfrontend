@@ -23,7 +23,6 @@ function Mainsection() {
     "
     >
       <motion.div
-        variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
