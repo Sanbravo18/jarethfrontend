@@ -11,7 +11,7 @@
 
 .mainbackgroundcss {
   background: rgb(25, 33, 45);
-  background: linear-gradient(
+  /*  background: linear-gradient(
     95deg,
     rgba(25, 33, 45, 1) 0%,
     rgba(19, 26, 41, 1) 28%,
@@ -19,5 +19,5 @@
     rgba(17, 27, 46, 1) 59%,
     rgba(19, 26, 41, 1) 80%,
     rgba(25, 33, 45, 1) 100%
-  );
+  ); */
 }

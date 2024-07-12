@@ -16,7 +16,7 @@ function Mainsection() {
       bg-no-repeat
       bg-center
       min-h-screen
-      mainsectioncss
+      mainbackgroundcss
       relative
       z-1
       overflow-hidden
@@ -31,7 +31,8 @@ function Mainsection() {
           variants={slideIn("down", "spring", 1, 1)}
           className={`sm:px-16 px-6 relative py-8`}
         >
-          <div className="absolute w-[50%] inset-0 gradient-01"></div>
+          {/* <div className="absolute w-[50%] inset-0 gradient-01" /> */}
+          <div className="absolute w-[100%] inset-0 gradient-01" />
         </motion.div>
         <motion.div
           variants={slideIn("down", "spring", 1, 1)}
@@ -53,10 +54,7 @@ function Mainsection() {
         font-extrabold
         pt-20
         md:pl-40
-        text-gradient
-        bg-gradient-to-r
-        from-blue-500
-        to-green-300
+        text-white
         bg-clip-text
         text-transparent
         "
