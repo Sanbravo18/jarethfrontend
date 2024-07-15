@@ -16,15 +16,29 @@ const config = {
   secure: process.env.NODE_ENV === "production",
 };
 
+const noSpaces = (val: string) => !/\s/.test(val);
+
 const schemaRegister = z.object({
-  username: z.string().min(3).max(20, {
-    message: "Username must be between 3 and 20 characters",
-  }),
+  username: z
+    .string()
+    .min(3)
+    .max(20, {
+      message: "el nombre de usuario debe ser entre 3 y 20 caracteres",
+    })
+    .refine(noSpaces, {
+      message: "nombre de usuario no debe contener espacios",
+    }),
   password: z.string().min(6).max(100, {
-    message: "Password must be between 6 and 100 characters",
+    message: "la contraseña debe ser entre 6 y 100 caracteres",
   }),
   email: z.string().email({
-    message: "Please enter a valid email address",
+    message: "por favor ingrese un email valido",
+  }),
+  name: z.string().min(3).max(20, {
+    message: "el nombre debe ser entre 3 y 20 caracteres",
+  }),
+  lastname: z.string().min(3).max(20, {
+    message: "el apellido debe ser entre 3 y 20 caracteres",
   }),
 });
 
@@ -33,6 +47,8 @@ export async function registerUserAction(prevState: any, formData: FormData) {
     username: formData.get("username"),
     password: formData.get("password"),
     email: formData.get("email"),
+    name: formData.get("name"),
+    lastname: formData.get("lastname"),
   });
 
   if (!validatedFields.success) {

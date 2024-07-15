@@ -39,23 +39,35 @@ function GetStarted() {
           <div className="grid gap-4">
             <div className="grid grid-cols-2 gap-4">
               <div className="grid gap-2">
-                <Label htmlFor="username">Username</Label>
+                <Label htmlFor="name">Username</Label>
                 <Input
-                  id="username"
-                  name="username"
-                  placeholder="Ej: luismi123"
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Ej: Luis Miguel"
                   required
                 />
               </div>
               <div className="grid gap-2">
-                <Label htmlFor="last-name">Apellidos</Label>
+                <Label htmlFor="lastname">Apellidos</Label>
                 <Input
-                  id="last-name"
-                  name="lastName"
+                  id="lastname"
+                  name="lastname"
+                  type="text"
                   placeholder="Ej: Rodriguéz Tapia"
                   required
                 />
               </div>
+            </div>
+            <div className="grid gap-2">
+              <Label htmlFor="username">Nombre de Usuario</Label>
+              <Input
+                id="username"
+                name="username"
+                type="text"
+                placeholder="luismi123"
+                required
+              />
             </div>
             <div className="grid gap-2">
               <Label htmlFor="email">Email</Label>
