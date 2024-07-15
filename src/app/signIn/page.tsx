@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useFormState } from "react-dom";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -12,22 +13,20 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { loginUserAction } from "@/data/actions/auth-actions";
+import { StrapiErrors } from "@/components/custom/StrapiErrors";
+
+const INITIAL_STATE = {
+  zodErrors: null,
+  strapiErrors: null,
+  data: null,
+  message: null,
+};
 
 function SignIn() {
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault();
-    const formData = new FormData(event.currentTarget);
-
-    try {
-      const prevState = {}; // Define el estado previo según sea necesario
-      await loginUserAction(prevState, formData);
-    } catch (error) {
-      console.error("Error registrando usuario:", error);
-    }
-  };
+  const [formState, formAction] = useFormState(loginUserAction, INITIAL_STATE);
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form action={formAction}>
       <Card className="mx-auto max-w-sm mt-6 mb-6">
         <CardHeader>
           <CardTitle className="text-2xl">Ingresar</CardTitle>

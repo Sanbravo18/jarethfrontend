@@ -56,7 +56,7 @@ export async function registerUserAction(prevState: any, formData: FormData) {
       ...prevState,
       zodErrors: validatedFields.error.flatten().fieldErrors,
       strapiErrors: null,
-      message: "Missing Fields. Failed to Register.",
+      message: "Falla de registro, campo faltante",
     };
   }
 
@@ -67,7 +67,7 @@ export async function registerUserAction(prevState: any, formData: FormData) {
       ...prevState,
       strapiErrors: null,
       zodErrors: null,
-      message: "Ops! Something went wrong. Please try again.",
+      message: "Ops! algo salio mal, intenta de nuevo.",
     };
   }
 
@@ -76,7 +76,7 @@ export async function registerUserAction(prevState: any, formData: FormData) {
       ...prevState,
       strapiErrors: responseData.error,
       zodErrors: null,
-      message: "Failed to Register.",
+      message: "falla de registro.",
     };
   }
 
@@ -88,18 +88,18 @@ const schemaLogin = z.object({
   identifier: z
     .string()
     .min(3, {
-      message: "Identifier must have at least 3 or more characters",
+      message: "Su nombre de usuario o email debe tener al menos 3 caracteres",
     })
     .max(20, {
-      message: "Please enter a valid username or email address",
+      message: "Su nombre de usuario o email debe tener menos de 20 caracteres",
     }),
   password: z
     .string()
     .min(6, {
-      message: "Password must have at least 6 or more characters",
+      message: "La contraseña debe tener al menos 6 caracteres",
     })
     .max(100, {
-      message: "Password must be between 6 and 100 characters",
+      message: "La contraseña debe tener menos de 100 caracteres",
     }),
 });
 
