@@ -29,7 +29,7 @@ function Footer() {
           <LuInstagram className="h-10 w-10" />
         </Link>
         <div className=" flex justify-center items-center ">
-          <span className="sr-only">Footer</span>© 2024 Jareth 2
+          <span className="sr-only">Footer</span>© 2024 Jareth with pm2
         </div>
       </div>
     </footer>
