@@ -1,6 +1,5 @@
-import React from "react";
-
 import Mainsection from "@/app/mainsection";
+import Explore from "@/app/explore";
 import "./mainsection.css";
 import Navbarshadcn from "@/components/navbar/navbar";
 
@@ -11,6 +10,7 @@ function page() {
 
       <main className="min-h-screen flex-col ">
         <Mainsection />
+        <Explore />
       </main>
     </div>
   );
